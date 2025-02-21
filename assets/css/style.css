@@ -1,0 +1,115 @@
+.container{
+    display: grid;
+    grid-template-columns: 150px auto ;
+    grid-template-rows: 70px 700px 150px 120px;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "aside main"
+    "footer footer";
+    text-align: center;
+    margin-left: -13px;
+    background-color: grey;
+    }
+    
+    .item-1{
+        background-color: rgb(151, 55, 55);
+        grid-area: "header";
+        grid-column: 1/4;
+        padding-top: 5px;
+        width: 1125px;
+        height: auto;
+    }
+    .item-2{
+        display: flex;
+        text-align: start;
+        align-items:flex-start;
+        background-color: rgb(212, 206, 206);
+        padding-top: 30px;
+        padding-right: 10px;
+        height: 990px;
+    
+     }
+    
+    .item-3{
+        display: grid;
+        grid-area: "main";
+        grid-row: 2/3;
+        grid-column: 2/4;
+        margin-top: -1040px;
+        margin-left: 152px;
+        padding-top: 50px;
+        width: 1000px;
+        background-color: white;
+    }
+    .card{
+        display: flex;
+        margin-left: 30px;
+        width: 200px;
+        height: auto;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    section{
+        display: grid;
+        background-color: rgb(212, 206, 206);
+        grid-template-columns: 250px 250px 250px 250px 250px;
+        grid-template-rows: 20px 500px 400px ;
+        padding-top: 50px;
+        padding-left: 100px;
+        margin-top: 20px;
+        margin-bottom: 200px;
+        height: 990px;
+        width: 975px;
+    }
+    
+    .card-1{
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        
+    }
+    .card-2{
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .card-3{
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .card-4{
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-top: 10px;
+    }
+    .card-5{
+        display: grid;
+        grid-column: 2/4;
+        grid-row: 3/4;
+        margin-top: 10px;
+    }
+    button{
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-top: 7px;
+        
+    }
+    .item-4{
+        display: grid;
+        background-color: rgb(151, 55, 55);
+        grid-area: "footer";
+        grid-column: 1/4;
+        grid-row: 3/4;
+        text-align: center;
+        width: 1127px;
+        margin-top: -200px;
+        padding-top: 5px;
+        height: 40px;
+    }
