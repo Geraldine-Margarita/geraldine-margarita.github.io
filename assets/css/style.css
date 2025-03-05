@@ -1,0 +1,126 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "footer";
+    height: 100vh;
+   
+
+}
+header{
+    grid-area: header;
+    text-align: end;
+    padding: 50px;
+    background: url('/assets/img/logo-surfing-surfboard-icon-for-web-Graphics-9633160-1.jpg') no-repeat center/cover;
+    width: 20px;
+    padding-left: 300px;
+    height: 30vh;
+    color: black;
+}
+.navbar{
+    justify-content: end;
+    margin-left: 200px;
+    margin-top: 30px;
+    color: black;
+}
+ul{
+    
+     padding-right: 45px;
+     color: black;
+}
+ol{
+        justify-content: center;
+        padding-right: -60px;
+        color: black;
+    }
+nav{
+    background: #afd6ce;
+    color: black;
+    grid-area: nav;
+    text-align: center;
+    padding: 10px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+
+}
+
+section{
+    background: #c5c8d4;
+    color: black;
+    grid-area: section;
+    text-align: center;
+    padding: 10px;
+}
+footer{
+    background: rgb(241, 241, 241);
+    color: black;
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    background-color: rgb(223, 211, 196);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+}
+
+.card img {
+    padding-top: 10px;
+    width: 50vh;
+    border-radius: 8px;
+    height: 40vh;
+
+}
+footer img{
+    width: 50px;
+    padding: 2px;
+}
+
+@media (min-width: 576px) {
+    body{
+        grid-template-areas: 
+        "header header"
+        "nav section"
+        "footer footer";
+        grid-template-columns: 1fr 3fr ;
+        height: 50vh;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar{
+        justify-content: end;
+        margin-left: 950px;
+        margin-top: 0px;
+        width: 200px;
+        }
+    
+}
+
+@media (min-width: 576px) {
+    header{
+
+    }
+}
