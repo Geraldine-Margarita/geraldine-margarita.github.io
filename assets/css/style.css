@@ -1,0 +1,206 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "footer";
+    height: 100vh;
+    background-color: rgb(223, 175, 185);
+    }
+
+
+header{
+
+        grid-area: header;
+        text-align: left;
+        padding-left: -500px;
+        margin-left: -240px;
+        margin-top: 50px;
+        background: url('/assets/img/coctelk.png') no-repeat center/cover;
+        width: 20px;
+        padding-left: 300px;
+        height: 30vh;
+        color: black;
+        transform: rotate(0deg);
+        transition: transform 1s;
+}
+header:hover{
+    transform: rotate(360deg);
+}
+
+
+ul {
+    padding: 10px;
+    list-style: none;
+    color: white;
+    background: rgb(134, 123, 126);
+    display: flex;
+    flex-direction: column;
+    }
+    ul li {
+    padding: 5px;
+    }
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: auto;
+    padding: 10px;
+    background-color: white;
+    height: auto;
+    width: auto;
+    transition: all 5s;
+    padding: 20px;
+    transition: all 5s;
+    border: 5px solid;
+    padding: 3px;
+    margin:5px;
+    border-radius: 10px;
+    border-color: rgb(196, 18, 18);
+        }
+
+div:hover{ 
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 5px solid;
+    padding: 3px;
+    margin:5px;
+}
+.vino{ 
+    height: 250px;  
+}
+
+
+img{
+    height: 150px;
+     border-radius: 10px;
+    border-color: blueviolet;
+}
+
+footer{
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.fotie img{
+    justify-content: space-between;
+    padding: 10px;
+    width: 10vh;
+    height: 10vh;
+}
+@media (min-width: 576px) {
+body{
+      grid-template-areas: 
+      "header header"
+      "nav section"
+      "footer footer";
+      grid-template-columns: 1fr 3fr ;
+      height: 50vh;
+}
+}
+
+@media (min-width: 576px){
+    nav{
+        grid-area: nav;
+        width: 380px;
+        padding-bottom: 1000px;
+        background-color: rgb(134, 123, 126);
+
+
+        
+    }
+}
+
+@media (min-width: 576px) {
+    ul {
+    justify-content: flex-end;
+    }
+    }
+
+@media(min-width: 576px) {
+header{ padding-left: 850px;
+}
+}
+
+
+@media (min-width: 576px){
+    .card{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        margin-left: -450px;
+
+    }
+}
+
+
+@media(min-width: 576px) {
+    div{ 
+        .vino{
+            height: 40vh;
+            width: 40vh;
+            display: flex;
+            flex-direction: row-reverse;
+            
+        }
+    }
+}
+
+
+
+@media (min-width: 576px) {
+        body{
+            grid-template-areas: 
+            "header header"
+            "nav section"
+            "footer footer";
+            grid-template-columns: 1fr 2fr ;
+            height: 50vh;
+        }
+        }
+
+@media (min-width: 576px) {
+            footer{
+             height: 20px;
+             width: 10px;
+             align-items: center;
+             padding: 10px;
+             margin-top: 40px;
+             padding-left: 800px;
+            }
+         }
+
+
+
+h2 {
+    position: absolute;
+    font-size: 30px;
+    animation: move 2s ease infinite;
+    }
+
+@keyframes move {
+    0% {
+    transform: translateX(20);
+    transform: rotate(180deg);
+    }
+    25% {
+    transform: translateX(100px);
+    }
+    50% {
+    transform: translateX(20);
+    transform: rotate(180deg)
+    ;
+    } 75% {
+    transform: translateX(100px);
+    }
+    100% {
+    transform: translateX(20);
+    }
+    }
